@@ -1,0 +1,47 @@
+nav{
+    background-color: rgba(135, 206, 235, 0.75);
+    color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 10;
+    transition: top .5s ease-in-out;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav a{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    border-bottom: 1px solid black;
+}
+nav a.active{
+    padding: 1rem 1.5rem;
+    border-left: .5rem solid red;
+}
+.haal-menu{
+    text-align: right;
+    display: block;
+    padding: .5em;
+    background-color: skyblue;
+}
+.close-menu{
+    text-align: right;
+    display: block;
+    padding: .5em;
+    background-color: skyblue;
+}
+#menuSwitcher{
+    display: none;
+}
+#menuSwitcher:checked ~ nav {
+    top: 100vh;
+
+}
